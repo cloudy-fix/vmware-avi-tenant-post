@@ -1,0 +1,97 @@
+﻿{
+    "visibility":  "Public",
+    "sample":  {
+                   "tenant":  "cloudy-fix-tenant",
+                   "flow":  [
+                                "Load environment",
+                                "Authenticate",
+                                "Build tenant payload",
+                                "POST tenant",
+                                "Validate response"
+                            ],
+                   "controller":  "https://avi-controller.example.local"
+               },
+    "endpoints":  [
+                      {
+                          "method":  "POST",
+                          "path":  "/api/tenant",
+                          "purpose":  "Create tenant"
+                      }
+                  ],
+    "category":  "Cloud Automation Script",
+    "accent":  "#0369a1",
+    "runtime":  "GitHub Pages hosts the request builder. Real provisioning runs from the Python script with secured environment variables.",
+    "docs":  [
+                 {
+                     "label":  "Repository",
+                     "url":  "https://github.com/cloudy-fix/vmware-avi-tenant-post",
+                     "note":  "Source, commits, issues, and project files"
+                 },
+                 {
+                     "label":  "Architecture",
+                     "url":  "https://github.com/cloudy-fix/vmware-avi-tenant-post/blob/main/docs/ARCHITECTURE.md",
+                     "note":  "System design and responsibilities"
+                 },
+                 {
+                     "label":  "Operations",
+                     "url":  "https://github.com/cloudy-fix/vmware-avi-tenant-post/blob/main/docs/OPERATIONS.md",
+                     "note":  "Runbook and deployment notes"
+                 },
+                 {
+                     "label":  "Workflow Diagram",
+                     "url":  "https://github.com/cloudy-fix/vmware-avi-tenant-post/blob/main/docs/diagrams/workflow.mmd",
+                     "note":  "End-to-end process map"
+                 },
+                 {
+                     "label":  "Architecture Diagram",
+                     "url":  "https://github.com/cloudy-fix/vmware-avi-tenant-post/blob/main/docs/diagrams/architecture.mmd",
+                     "note":  "Component-level diagram"
+                 }
+             ],
+    "repo":  "vmware-avi-tenant-post",
+    "links":  {
+                  "pages":  "https://cloudy-fix.github.io/vmware-avi-tenant-post/",
+                  "portfolio":  "https://cloudy-fix.github.io/portfolio/projects.html",
+                  "repo":  "https://github.com/cloudy-fix/vmware-avi-tenant-post"
+              },
+    "stack":  [
+                  "Python",
+                  "VMware AVI",
+                  "REST API",
+                  "Environment Config",
+                  "Tenant Provisioning"
+              ],
+    "metrics":  [
+                    {
+                        "label":  "Action",
+                        "detail":  "Focused API workflow",
+                        "value":  "Tenant create"
+                    },
+                    {
+                        "label":  "Security",
+                        "detail":  "No committed credentials",
+                        "value":  "Env-driven"
+                    },
+                    {
+                        "label":  "Review",
+                        "detail":  "Setup and execute",
+                        "value":  "Simple run path"
+                    }
+                ],
+    "accentTwo":  "#ea580c",
+    "highlights":  [
+                       "Provision tenants through API calls",
+                       "Avoids committed secrets",
+                       "Keeps a clear focused automation flow"
+                   ],
+    "components":  [
+                       "tenant_provisioning.py",
+                       "Environment variables",
+                       "AVI controller API",
+                       "Tenant payload",
+                       "Response validation"
+                   ],
+    "demoType":  "avi",
+    "mission":  "A focused tenant provisioning workflow for VMware AVI Load Balancer APIs using environment-driven configuration and safe request handling.",
+    "title":  "VMware AVI Tenant Provisioning"
+}
