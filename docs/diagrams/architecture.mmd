@@ -1,0 +1,6 @@
+﻿flowchart LR
+    User["AVI controller config and tenant name"] --> App["Tenant provisioning script"]
+    App --> Data["Controller session and tenant payload"]
+    App --> Output["Provisioned AVI tenant"]
+    Data --> Output
+
